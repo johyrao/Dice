@@ -5,7 +5,7 @@ void setup()
 }
 void draw()
 {
-	//your code here
+	
 	background(0);
 	for (int x = 20; x < 500; x = x + 70)
 	{
@@ -23,7 +23,7 @@ class Die //models one single dice cube
 	//variable declarations here
 	int value;
 	int myX, myY;
-	Die(int x, int y) //constructor
+	Die(int x, int y) 
 	{
 		//variable initializations here
 		value = (int)(Math.random()*6);
@@ -32,8 +32,7 @@ class Die //models one single dice cube
 	}
 	void roll()
 	{
-		value = 6;
-		/*your code here
+		//your code here
 		if (Math.random()*6 < 1)
 		{
 			value = 1;
@@ -59,7 +58,6 @@ class Die //models one single dice cube
 		{
 			value = 6;	
 		}
-		*/
 	}
 	void show()
 	{
@@ -109,8 +107,4 @@ class Die //models one single dice cube
 		}
 	}
 }
-/*void sum()
-{
-	text("");
-}
-*/
+
