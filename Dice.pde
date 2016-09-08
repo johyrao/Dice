@@ -107,6 +107,7 @@ class Die //models one single dice cube
 		}
 	}
 }
+/*
 void sum();
 {
 	text("")
