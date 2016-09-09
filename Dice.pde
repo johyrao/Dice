@@ -18,21 +18,18 @@ void mousePressed()
 {
 	redraw();
 }
-class Die //models one single dice cube
+class Die
 {
-	//variable declarations here
 	int value;
 	int myX, myY;
 	Die(int x, int y) 
 	{
-		//variable initializations here
 		value = (int)(Math.random()*6);
 		myX = x;
 		myY = y;
 	}
 	void roll()
 	{
-		//your code here
 		if (Math.random()*6 < 1)
 		{
 			value = 1;
@@ -61,7 +58,6 @@ class Die //models one single dice cube
 	}
 	void show()
 	{
-		//your code here
 		noStroke();
 		fill(255);
 		rect(myX,myY,50,50,15);
@@ -107,4 +103,3 @@ class Die //models one single dice cube
 		}
 	}
 }
-
