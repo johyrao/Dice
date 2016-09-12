@@ -1,18 +1,25 @@
 void setup()
 {
-	size(500,500);
+	size(500,600);
 	noLoop();
 }
 void draw()
 {
-	
 	background(0);
-	for (int x = 20; x < 500; x = x + 70)
+	for (int y = 125; y < 400; y += 100)
 	{
-		Die dice = new Die(x,x);
-		dice.roll();
-		dice.show();
+		for (int x = 125; x < 400; x += 100)
+		{
+			Die dice = new Die(x,y);
+			dice.roll();
+			dice.show();
+		}
 	}
+	// void sumOfAll()
+	// {
+	// 	dice.value;
+	// }
+	// System.out.print("sumOfAll" 250, 450);
 }
 void mousePressed()
 {
