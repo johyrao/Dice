@@ -1,11 +1,12 @@
 void setup()
 {
-	size(500,600);
+	size(500,550);
 	noLoop();
 }
 void draw()
 {
 	background(0);
+	int numDice = 0;
 	for (int y = 125; y < 400; y += 100)
 	{
 		for (int x = 125; x < 400; x += 100)
@@ -13,13 +14,14 @@ void draw()
 			Die dice = new Die(x,y);
 			dice.roll();
 			dice.show();
+			if(dice.value <= 6)
+			{
+				numDice = numDice + dice.value;
+			}
 		}
 	}
-	// void sumOfAll()
-	// {
-	// 	dice.value;
-	// }
-	// System.out.print("sumOfAll" 250, 450);
+	fill(255);
+	text("Sum of Dice:" + numDice, 210, 450);
 }
 void mousePressed()
 {
