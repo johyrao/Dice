@@ -41,7 +41,6 @@ class Die
 		{
 			value = 1;
 		}
-		
 		else if (Math.random()*6 < 2)
 		{
 			value = 2;
