@@ -21,7 +21,9 @@ void draw()
 		}
 	}
 	fill(255);
-	text("Sum of Dice:" + numDice, 210, 450);
+	textSize(20);
+	textAlign(CENTER, TOP);
+	text("Sum of Dice:" + numDice, 250, 450);
 }
 void mousePressed()
 {
